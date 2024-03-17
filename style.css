@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Manuale", serif;
+}
+body {
+  height: 5000px !important;
+  background-color: #0d0f11;
+}
+.navbar {
+  background-color: transparent;
+}
+.navbar a {
+  text-shadow: 1px 2px 5px #2d2d2d6a;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar h2 {
+  font-family: "Sunshiney", cursive;
+}
+.menu {
+  background-color: aqua;
+  height: 5rem;
+  width: 5rem;
+  padding: 1rem;
+  display: none;
+}
+.hero {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background: url(https://source.unsplash.com/random/?wedding) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 8rem;
+  filter: grayscale(90%);
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0d0f11;
+  opacity: 0.5;
+}
+.hero .container-fluid {
+  position: relative;
+}
+.hero .content {
+  width: 100%;
+  max-width: 30rem;
+  margin: auto;
+  position: relative;
+  color: #fff;
+}
+.hero .content h1 {
+  font-size: 2.5rem;
+  text-shadow: 1px 2px 5px #2d2d2d6a;
+}
+.hero .content h3 {
+  font-size: 1.2rem;
+  text-shadow: 1px 2px 5px #2d2d2d6a;
+}
+.hero .content p {
+  font-size: 1rem;
+  text-shadow: 1px 2px 5px #2d2d2d6a;
+}
+.hero .btns button {
+  padding: 0.6rem 2rem;
+}
+
+.about {
+  margin-top: 5rem;
+  color: #fff;
+}
+.about .sosmed {
+  margin-top: 2rem;
+}
+.about .sosmed a {
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  transition: linear 0.2s;
+}
+.about .sosmed a:hover {
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  color: #000 !important;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+}
+.about img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+.about .img-about-left {
+  height: 30rem;
+}
+.about .img-about-right {
+  height: 30rem;
+}
+
+.portofolio {
+  color: #fff;
+  width: 100%;
+  margin: 8rem 0;
+}
+
+.portofolio img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 72.5%;
+  }
+
+  .nav-wrapper {
+    flex-direction: column;
+  }
+  .left-nav {
+    order: 2;
+    display: none;
+  }
+  .center-nav {
+    order: 1;
+  }
+  .right-nav {
+    order: 3;
+    display: none;
+  }
+  .menu {
+    background-color: aqua;
+    height: 2rem;
+    cursor: pointer;
+    width: 2rem;
+    padding: 1rem;
+    display: block;
+    order: 2;
+  }
+  .about .img-about-right {
+    height: 25rem;
+    display: none;
+  }
+}
